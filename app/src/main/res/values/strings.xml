@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Healthiera</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="calendar">Calendar</string>
+    <string name="goals">Goals</string>
+    <string name="healthData">Health Data</string>
+    <string name="medical">Medical</string>
+
+    <string-array name="diabet_types">
+        <item>Unset</item>
+        <item>Type1</item>
+        <item>Type2</item>
+        <item>Gestational</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="dayofweek">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+    <string-array name="measurement_goals">
+        <item>Hight</item>
+        <item>Weight</item>
+        <item>Pulse</item>
+        <item>Pressure</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="measurement_types">
+        <item>Hight</item>
+        <item>Weight</item>
+        <item>Pulse</item>
+        <item>Pressure</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="doctors">
+        <item>Dr House</item>
+        <item>Dr Brown</item>
+        <item>Dr Tanner</item>
+        <item>Dr Pain</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_medication">Medication</string>
+
+
+    <string name="title_activity_goal">GoalActivity</string>
+    <string name="goal1_name">HDL</string>
+    <string name="goal1_value">mg/dL</string>
+    <string name="goal2_name">Weight</string>
+    <string name="goal2_value" >cm</string>
+    <string name="goal3_name">BMI</string>
+    <string name="goal3_value" >_</string>
+    <string name="goal4_name">A1c</string>
+    <string name="goal4_value" >_</string>
+    <string name="goal5_name">LDL</string>
+    <string name="goal5_value">mg/dL</string>
+    <string name="goal6_name">Systolic Blood Pressure</string>
+    <string name="goal6_value">mmHg</string>
+    <string name="goal7_name">Diastolic Blood Pressure</string>
+    <string name="goal7_value">mmHg</string>
+    <string name="edit">edit</string>
+    <string name="save">save</string>
+    <string name="goal_page_dialog_titl">Titl</string>
+    <string name="goal_page_dialog_message">message text ...</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_health_data">Health Data</string>
+    <string name="title_activity_status">Status</string>
+    <string name="title_activity_heredity">Heredity</string>
+    <string name="title_activity_anamnesis_vitae">AnamnesisVitae</string>
+    <string name="title_activity_devices">Devices</string>
+    <string name="title_activity_complains">Complains</string>
+    <string name="title_activity_care_plan">CarePlanActivity</string>
+    <string name="title_activity_medical_id">MedicalIdActivity</string>
+    <string name="title_activity_educational_tips">EducationalTipsActivity</string>
+    <string name="title_activity_care_plan_1">CarePlanActivity_1</string>
+    <string name="title_activity_advance_graph">AdvanceGraphActivity</string>
+    <string name="title_activity_apointment">Apointment</string>
+    <string name="title_activity_measurment">Measurment</string>
+    <string name="title_activity_treatments">Treatments</string>
+    <string name="title_activity_health_data_1">HealthData_1</string>
+
+
+</resources>

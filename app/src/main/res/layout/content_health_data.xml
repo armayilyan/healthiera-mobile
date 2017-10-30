@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.healthiera.mobile.activitys.HealthDataActivity"
+                tools:showIn="@layout/app_bar_health_data"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBackground">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="12dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/circle_medication"
+                        android:focusable="false"
+                        android:padding="8dp"
+                        android:src="@drawable/complains"/>
+
+                    <TextView
+                        android:id="@+id/tvComplainsandSymptoms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:shadowColor="#a0ffffff"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="Complaints and Symptoms"
+                        android:textColor="#666666"
+                        android:textSize="17dp"
+                        android:typeface="serif"/>
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="12dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/circle_medication"
+                        android:focusable="false"
+                        android:padding="8dp"
+                        android:src="@drawable/anamnesis"/>
+
+                    <TextView
+                        android:id="@+id/tvAnamnesisVitae"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:shadowColor="#a0ffffff"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="Anamnesis Vitae"
+                        android:textColor="#666666"
+                        android:textSize="17dp"
+                        android:typeface="serif"/>
+
+                    <ImageView
+                        android:id="@+id/iv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="12dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/circle_medication"
+                        android:focusable="false"
+                        android:padding="8dp"
+                        android:src="@drawable/heredity"/>
+
+                    <TextView
+                        android:id="@+id/tvHeredity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:shadowColor="#a0ffffff"
+                        android:shadowDx="1"
+
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="Heredity ( family history )"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#666666"
+                        android:textSize="17dp"
+                        android:typeface="serif"/>
+
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="12dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/circle_medication"
+                        android:focusable="false"
+                        android:padding="8dp"
+                        android:src="@drawable/status"/>
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:shadowColor="#a0ffffff"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="Status"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#666666"
+                        android:textSize="17dp"
+                        android:typeface="serif"/>
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="12dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/circle_medication"
+                        android:focusable="false"
+                        android:padding="8dp"
+                        android:src="@drawable/device"/>
+
+                    <TextView
+                        android:id="@+id/tvSpecialDevices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingBottom="15dp"
+                        android:paddingTop="15dp"
+                        android:shadowColor="#a0ffffff"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:text="Special Devices"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#666666"
+                        android:textSize="17dp"
+                        android:typeface="serif"/>
+
+                    <ImageView
+                        android:id="@+id/iv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>

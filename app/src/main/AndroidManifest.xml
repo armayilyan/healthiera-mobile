@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.healthiera.mobile"
+          android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="24"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="com.activeandroid.app.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- DB credential -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="healthiera7.db"/>
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="12"/>
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.healthiera.mobile.entity.Doctor,com.healthiera.mobile.entity.Goal,
+            com.healthiera.mobile.entity.Measurement,com.healthiera.mobile.entity.Medication,
+            com.healthiera.mobile.entity.MeasurementLog, com.healthiera.mobile.entity.MedicationLog,
+            com.healthiera.mobile.entity.Procedure,com.healthiera.mobile.entity.Profile,
+            com.healthiera.mobile.entity.Schedule,com.healthiera.mobile.entity.ScheduleTime,
+            com.healthiera.mobile.entity.ScheduleTimeLog,com.healthiera.mobile.entity.Settings,
+            com.healthiera.mobile.entity.HealthDate,com.healthiera.mobile.entity.TreatmentCode,
+            com.healthiera.mobile.entity.MedicationList,com.healthiera.mobile.entity.AppointmentCode"/>
+
+        <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <service
+            android:name=".notification_service.EventNotifiService"
+            android:exported="false"/>
+
+        <activity android:name=".fragment.BaseFragment$ProviderDescription"/>
+        <activity android:name=".Schedule.Treatment"/>
+        <activity android:name=".Schedule.Appointment"/>
+        <activity
+            android:name=".Schedule.Medication"
+            android:label="@string/title_activity_medication"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".Schedule.Measurement"/>
+        <activity
+            android:name=".activitys.GoalActivity"
+            android:label="@string/title_activity_goal"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".activitys.HealthDataActivity"
+            android:label="@string/title_activity_health_data"/>
+        <activity
+            android:name=".activitys.healthData.AnamnesisVitae"
+            android:label="@string/title_activity_anamnesis_vitae"
+            android:parentActivityName=".activitys.HealthDataActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.healthData.Status"
+            android:label="@string/title_activity_status"
+            android:parentActivityName=".activitys.HealthDataActivity"/>
+        <activity
+            android:name=".activitys.healthData.Heredity"
+            android:label="@string/title_activity_heredity"
+            android:parentActivityName=".activitys.HealthDataActivity"/>
+        <activity
+            android:name=".activitys.healthData.Devices"
+            android:label="@string/title_activity_devices"
+            android:parentActivityName=".activitys.HealthDataActivity"/>
+        <activity
+            android:name=".activitys.healthData.Complains"
+            android:label="@string/title_activity_complains"
+            android:parentActivityName=".activitys.HealthDataActivity"/>
+        <activity
+            android:name=".activitys.CarePlanActivity"
+            android:label="@string/title_activity_care_plan"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.MedicalIdActivity"
+            android:label="@string/title_activity_medical_id"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.EducationalTipsActivity"
+            android:label="@string/title_activity_educational_tips"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.CarePlanActivity_1"
+            android:label="@string/title_activity_care_plan_1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.AdvanceGraphActivity"
+            android:label="@string/title_activity_advance_graph"
+            android:parentActivityName=".activity.main.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.CarePlanActivityes.Apointment"
+
+            android:label="@string/title_activity_apointment"
+            android:parentActivityName=".activitys.CarePlanActivity_1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.CarePlanActivityes.Medication"
+            android:label="@string/title_activity_medication"
+            android:parentActivityName=".activitys.CarePlanActivity_1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.CarePlanActivityes.Measurment"
+            android:label="@string/title_activity_measurment"
+            android:parentActivityName=".activitys.CarePlanActivity_1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.CarePlanActivityes.Treatments"
+            android:label="@string/title_activity_treatments"
+            android:parentActivityName=".activitys.CarePlanActivity_1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".activitys.HealthData_1"
+            android:label="@string/title_activity_health_data_1"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+    </application>
+
+</manifest>

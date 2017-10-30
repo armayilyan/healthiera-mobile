@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="24dp"
+        android:height="24dp"
+        android:viewportHeight="24"
+        android:viewportWidth="24">
+    <path
+        android:pathData="M 1 4 H23 V23 H1z"
+        android:strokeColor="#7ce"
+        android:strokeWidth="1.5"/>
+
+    <path
+        android:pathData="
+            M2.5 5.5V21.5
+            M4.875 5.5V21.5
+            M7.25 5.5V21.5
+            M9.625 5.5V21.5
+            M12 5.5V21.5
+            M14.375 5.5V21.5
+            M16.75 5.5V21.5
+            M19.125 5.5V21.5
+            M21.5 5.5V21.5
+
+            M2.5 5.5 H21.5
+            M2.5 7.25 H21.5
+            M2.5 9.625H21.5
+            M2.5 12 H21.5
+            M2.5 14.375 H21.5
+            M2.5 16.75 H21.5
+            M2.5 19.125 H21.5
+            M2.5 21.5 H21.5
+            "
+        android:strokeColor="#b5d9e7"
+        android:strokeWidth=".5"/>
+
+    <path
+        android:pathData="M12 0.5 A 2.5 2.5 0 0 ,1 14 3"
+        android:strokeColor="#e34e10"
+        android:strokeWidth="1.5"/>
+    <path
+        android:fillColor="#e34e10"
+        android:pathData="M12, 2.3 H16.5 V6H12z"/>
+    <path
+        android:pathData="M10 3 A 2.5 2.5 0 0 ,1 12 0.5"
+        android:strokeColor="#fc611f"
+        android:strokeWidth="1.5"/>
+    <path
+        android:fillColor="#fc611f"
+        android:pathData="M12, 2.3 H7.5 V6H12z"/>
+
+    <group
+        android:translateX="11.4"
+        android:translateY="0.4">
+        <path
+            android:fillColor="#e34e10"
+            android:pathData="M0 0 A .7 .7 0 1, 1 0 0.1"/>
+    </group>
+    <group
+        android:translateX="14"
+        android:translateY="4">
+        <path
+            android:fillColor="#7ce"
+            android:pathData="M0 0 A .7 .7 0 1, 1 0 0.1"/>
+    </group>
+    <group
+        android:translateX="8.7"
+        android:translateY="4">
+        <path
+            android:fillColor="#7ce"
+            android:pathData="M0 0 A .7 .7 0 1, 1 0 0.1"/>
+    </group>
+
+
+    <group
+        android:translateX="2.5"
+        android:translateY="12.5">
+        <path
+            android:pathData="M0 0 H 4V4 L 6.5 -3V0
+            H 8 L10 -6 L 11 5 L 12 -2 L 12.5 0H 15L 16 -2.5 L 16 0H19"
+            android:strokeColor="#fc611f"
+            android:strokeWidth="0.5"/>
+    </group>
+
+    <path
+        android:pathData="M1.7 22.5 H22.3"
+        android:strokeColor="#48afcc"
+        android:strokeWidth="0.5"/>
+
+    <path
+        android:pathData="M0.3 23.5 H23.7"
+        android:strokeColor="#48afcc"
+        android:strokeWidth="0.5"/>
+</vector>
+    <!--Url http://www.flaticon.com/free-icon/cardiogram_230181-->

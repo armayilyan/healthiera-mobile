@@ -1,0 +1,13 @@
+/.gradle
+/.idea
+build
+*.iml
+/gradle
+gradlew
+gradlew.bat
+/local.properties
+.DS_Store
+/captures
+/signature.jks
+/app-release.apk
+app/src/main/java/com/healthiera/mobile/activitys/GoalActivity.java.rej

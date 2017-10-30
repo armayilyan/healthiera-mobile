@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#299589</color>
+    <color name="colorPrimaryFade">#80299589</color>
+    <color name="colorPrimaryDark">#00796b</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menu">#3F51B5</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorBackground">#e0f2f1</color>
+    <color name="colorStatusActive">#00B0FF</color>
+    <color name="colorStatusDone">#4bae4f</color>
+    <color name="colorStatusCancel">#F50057</color>
+</resources>

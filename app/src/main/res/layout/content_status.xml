@@ -1,0 +1,338 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+             tools:context="com.healthiera.mobile.activitys.healthData.Status"
+             tools:showIn="@layout/activity_status">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/list_view_goals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent">
+
+    </ListView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:visibility="gone">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/status1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="9dp"
+                        android:text="Weight"
+                        android:textColor="#458495"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/value_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="5dp"
+                        android:text="Not set"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#B8B7B7"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/status2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="9dp"
+                        android:text="Height"
+                        android:textColor="#458495"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/value_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="5dp"
+                        android:text="Not set"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#B8B7B7"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/status3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="9dp"
+                        android:text="BMI (body mass index)"
+                        android:textColor="#458495"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/value_bmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="5dp"
+                        android:text="Not set"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#B8B7B7"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/status4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="9dp"
+                        android:shadowColor="#80ffffff"
+                        android:text="Thallium / Hips"
+                        android:textColor="#458495"
+                        android:textSize="18dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/value_thalium_hips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="5dp"
+                        android:text="Not set"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#B8B7B7"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/iv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/status5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="9dp"
+                        android:text="Pulse"
+                        android:textColor="#458495"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/value_pulse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="5dp"
+                        android:text="Not set"
+                        android:textColor="#B8B7B7"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/iv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/status6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="9dp"
+                        android:text="Blood Pressure"
+                        android:textColor="#458495"
+                        android:textSize="18dp"/>
+
+                    <TextView
+                        android:id="@+id/value_blood_pressure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="5dp"
+                        android:text="Not set"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#B8B7B7"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/iv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:adjustViewBounds="true"
+                        android:baselineAlignBottom="false"
+                        android:cropToPadding="false"
+                        android:focusableInTouchMode="false"
+                        android:forceHasOverlappingRendering="false"
+                        android:maxHeight="15dp"
+                        android:src="@drawable/arrow_right"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </TableLayout>
+    </ScrollView>
+</FrameLayout>
+

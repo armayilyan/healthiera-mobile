@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llProcedure"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="12dp"
+                                android:text="Fusion of lambosacral lapit asdasdffas sdasd dasdasdasd asdasdasd"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Description"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Doctor"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvDoctor"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Code"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Start date"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvStartDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="End date"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvEndDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Duration type"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvDurationType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Repeat type"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvRepeatType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMesurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvMesurName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="12dp"
+                                android:text="asdsadasdasd"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="Description"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/tvMesurDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:text=""
+                                    android:textColor="#3296f3"
+                                    android:textSize="14dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#E5E5E5"/>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="Mesur Type"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/tvMesurType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:text=""
+                                    android:textColor="#3296f3"
+                                    android:textSize="14dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#E5E5E5"/>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="Start date"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/tvMesurementStartDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:text=""
+                                    android:textColor="#3296f3"
+                                    android:textSize="14dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#E5E5E5"/>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="End date"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/tvMesurementEndDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:text=""
+                                    android:textColor="#3296f3"
+                                    android:textSize="14dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#E5E5E5"/>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="Duration type"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/tvMesurementDurationType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:text=""
+                                    android:textColor="#3296f3"
+                                    android:textSize="14dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#E5E5E5"/>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="Repeat type"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="18dp"/>
+
+                                <TextView
+                                    android:id="@+id/tvMesuremenRepeatType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="#3296f3"
+                                    android:textSize="14dp"/>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#E5E5E5"/>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/trGoal"
+                                android:visibility="invisible"
+                                >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:padding="10dp"
+                                    android:text="Value"
+                                    android:textColor="#6d6d6d"
+                                    android:textSize="18dp"/>
+
+                                <EditText
+                                    android:id="@+id/etMesurValue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:minWidth="@dimen/bottom_navigation_elevation"
+                                    android:paddingLeft="10dp"
+                                    android:text=""
+                                    android:textColor="#3296f3"
+                                    android:textSize="14dp"
+                                    android:theme="@style/myEditTextStyle"/>
+                            </TableRow>
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:id="@+id/trGoalPressure"
+                                android:visibility="invisible"
+                                >
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Systolic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="14sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/etSystolicValue"
+                                        android:layout_height="wrap_content"
+                                        />
+
+                                    <TextView
+                                        android:text="mm Hg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:text="Diastolic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="14sp" />
+                                    <EditText
+                                        android:layout_width="wrap_content"
+                                        android:id="@+id/etDiastolicValue"
+                                        android:layout_height="wrap_content"
+                                        />
+                                    <TextView
+                                        android:text="mm Hg"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:textSize="14sp" />
+                                </LinearLayout>
+                            </TableRow>
+                        </TableLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_margin="10dp"
+                                app:cardBackgroundColor="#607d8b"
+                                app:cardCornerRadius="2dp"
+                                app:cardElevation="3dp">
+
+                                <Button
+                                    android:id="@+id/btnMesurementDone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#607d8b"
+                                    android:minHeight="0dp"
+                                    android:minWidth="0dp"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Done"
+                                    android:textColor="#ffffff"/>
+
+                            </android.support.v7.widget.CardView>
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMedication"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvMedicationName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:padding="12dp"
+                                android:text="asdsadasdasd adsasdas"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Description"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMedicationDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Manufacturer"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMedicationManufacturer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Code"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMedicationCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Start date"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMedicationStartDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="End date"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMedicationEndDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#E5E5E5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Duration type"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMedicationDurationType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="48dp"
+                                android:gravity="center_vertical"
+                                android:padding="10dp"
+                                android:text="Repeat type"
+                                android:textColor="#6d6d6d"
+                                android:textSize="18dp"/>
+
+                            <TextView
+                                android:id="@+id/tvMedicationRepeatType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="#3296f3"
+                                android:textSize="14dp"/>
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:layout_margin="10dp"
+                                app:cardBackgroundColor="#607d8b"
+                                app:cardCornerRadius="2dp"
+                                app:cardElevation="3dp">
+
+                                <Button
+                                    android:id="@+id/btnMedicationDone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#607d8b"
+                                    android:minHeight="0dp"
+                                    android:minWidth="0dp"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:paddingTop="10dp"
+                                    android:text="Done"
+                                    android:textColor="#ffffff"/>
+
+                            </android.support.v7.widget.CardView>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard_icon"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/health_data"
+            android:icon="@drawable/health_data_icon"
+            android:title="Health Data Activity"
+            android:visible="false"/>
+        <item
+            android:id="@+id/health_data1"
+            android:icon="@drawable/health_data_icon"
+            android:title="Health Data"/>
+
+        <item
+            android:id="@+id/goals"
+            android:icon="@drawable/goals_icon"
+            android:title="Goals"/>
+
+        <item
+            android:id="@+id/care_plan_activity"
+            android:icon="@drawable/calendar_icon"
+            android:title="Care Plan activity"
+            android:visible="false"/>
+        <item
+            android:id="@+id/care_plan_activity1"
+            android:icon="@drawable/calendar_icon"
+            android:title="Care Plan"/>
+
+        <item
+            android:id="@+id/medical_id"
+            android:icon="@drawable/medical_icon"
+            android:title="Medical Id"/>
+        <item
+            android:id="@+id/educational_tips"
+            android:icon="@drawable/medical_icon"
+            android:title="Educational Tips"/>
+    </group>
+
+</menu>
