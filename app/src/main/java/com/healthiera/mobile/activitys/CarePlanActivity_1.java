@@ -131,9 +131,7 @@ public class CarePlanActivity_1 extends AppCompatActivity
         fabTreatment.setOnClickListener(this);
 
 
-        if (savedInstanceState == null || !savedInstanceState.containsKey(KEY)) {
-
-        } else {
+        if (savedInstanceState != null && savedInstanceState.containsKey(KEY)) {
             flag = savedInstanceState.getBoolean(KEY);
             if (flag) {
                 menu.open(true);
@@ -303,19 +301,6 @@ public class CarePlanActivity_1 extends AppCompatActivity
 //
 //
 //        }
-        else if (id == R.id.educational_tips) {
-            drawer.closeDrawer(GravityCompat.START);
-            handler.postDelayed(
-                    new Runnable() {
-                        public void run() {
-                            Intent i = new Intent(getApplication(), EducationalTipsActivity.class);
-                            startActivity(i);
-                        }
-                    }, 260L);
-
-
-        }
-
 
         return true;
     }

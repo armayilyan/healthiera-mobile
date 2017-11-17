@@ -56,7 +56,7 @@ public class StatusGraph extends Fragment {
         goals = service.getAllGoals();
         value = new String[name.length];
         for (int i = 0; i < goals.size() && i < 7; i++) {
-            value[i] = goals.get(i).getValue().toString();
+            value[i] = goals.get(i).getValue();
         }
         for (int i = 0; i < value.length - 1; i++) {
             if (value[i] != null && value[i].length() > 0) {

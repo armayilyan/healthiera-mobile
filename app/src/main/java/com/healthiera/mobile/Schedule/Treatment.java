@@ -494,7 +494,7 @@ public class Treatment extends AppCompatActivity implements Animation.AnimationL
                 radioButtonDay3.setChecked(false);
 
                 for (int i = 0; i < 7; i++) {
-                    checkedDays[i] = mSelectedItems.contains(i) ? true : false;
+                    checkedDays[i] = mSelectedItems.contains(i);
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(Treatment.this);
                 builder.setTitle("Pick Days")

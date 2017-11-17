@@ -12,7 +12,6 @@ import java.util.List;
 
 public class NotificationService {
     public List<ScheduleTime> getEventsByTime(Date date) {
-        List<ScheduleTime> scheduleTimes =new ArrayList<>();
-        return scheduleTimes;
+        return new ArrayList<>();
     }
 }

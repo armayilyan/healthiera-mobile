@@ -108,7 +108,7 @@ public class AnamnesisVitae extends Fragment implements CompoundButton.OnChecked
                 lGlucocorticoidsintake.setVisibility(View.VISIBLE);
             else {
                 final HealthDate healthDate = new HealthDate();
-                healthDate.setValue(String.valueOf(isChecked));
+                healthDate.setValue(String.valueOf(false));
                 healthDate.setHealthDateType(HealthDateType.GLUCOCRITICOIDS_INTAKE);
                 HEALTH_DATA_SERVICE.createHealthDate(healthDate);
                 lGlucocorticoidsintake.setVisibility(View.GONE);

@@ -667,7 +667,7 @@ public class Measurement extends AppCompatActivity implements View.OnClickListen
                                     }
                                 }
                             });
-                        } else if (position == 5) {
+                        } else {
                             final View addGoal = getLayoutInflater().inflate(R.layout.alertdialog_add_goal_pressure, null);
                             final EditText etSystolicValue = (EditText) addGoal.findViewById(R.id.etSystolicValue);
                             final EditText etDiastolicValue = (EditText) addGoal.findViewById(R.id.etDiastolicValue);

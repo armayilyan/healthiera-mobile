@@ -7,7 +7,7 @@ import android.widget.Button;
 /**
  * Created by Davit on 31.08.2016.
  */
-public class BaseButton extends Button {
+public class BaseButton extends android.support.v7.widget.AppCompatButton {
 
     public BaseButton(Context context) {
         super(context);

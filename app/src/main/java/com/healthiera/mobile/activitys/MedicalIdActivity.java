@@ -210,19 +210,7 @@ public class MedicalIdActivity extends AppCompatActivity
 //                    }, 260L);
 //
 
-        } else if (id == R.id.educational_tips) {
-            drawer.closeDrawer(GravityCompat.START);
-            handler.postDelayed(
-                    new Runnable() {
-                        public void run() {
-                            Intent i = new Intent(getApplication(), EducationalTipsActivity.class);
-                            startActivity(i);
-                        }
-                    }, 260L);
-
-
         }
-
 
         return true;
     }

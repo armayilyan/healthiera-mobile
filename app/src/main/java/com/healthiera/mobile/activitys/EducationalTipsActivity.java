@@ -216,13 +216,7 @@ public class EducationalTipsActivity extends AppCompatActivity
 //                        }
 //                    }, 260L);
 //
-        } else if (id == R.id.educational_tips) {
-            drawer.closeDrawer(GravityCompat.START);
-
-
-
         }
-
 
         return true;
     }

@@ -128,11 +128,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+        return item.getItemId() == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 
 
@@ -325,21 +321,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             startActivity(i);
                         }
                     }, 260L);
-
-
-        } else if (id == R.id.educational_tips) {
-            drawer.closeDrawer(GravityCompat.START);
-            handler.postDelayed(
-                    new Runnable() {
-                        public void run() {
-                            Intent i = new Intent(getApplication(), EducationalTipsActivity.class);
-                            startActivity(i);
-                        }
-                    }, 260L);
-
-
         }
-
 
         return true;
     }

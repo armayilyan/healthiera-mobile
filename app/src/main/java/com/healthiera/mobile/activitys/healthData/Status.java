@@ -68,7 +68,7 @@ public class Status extends AppCompatActivity {
 
         List<MeasurementLog> list = MeasurementLogService.GetLastLogedMeasurement();
         for (int i = 0; i < list.size(); i++) {
-            value[i] = list.get(i).getValue().toString();
+            value[i] = list.get(i).getValue();
         }
 
         goalListAdapter = new GoalListAdapter();

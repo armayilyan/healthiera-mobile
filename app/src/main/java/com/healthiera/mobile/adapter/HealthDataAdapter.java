@@ -22,11 +22,9 @@ import java.util.Map;
 
 public class HealthDataAdapter extends RecyclerView.Adapter<HealthDataAdapter.CatalogViewHolder> {
 
-    String[] title = {"Complaints and Symptoms","Anamnesis Vitae","Heredity ( family history )","Status","Special Devices"};
-    Map<String, Integer> map = new HashMap<String, Integer>();
+    private String[] title = {"Complaints and Symptoms","Anamnesis Vitae","Heredity ( family history )","Status","Special Devices"};
+    private Map<String, Integer> map = new HashMap<>();
     private Context context;
-
-
 
 
     public HealthDataAdapter(Context context){

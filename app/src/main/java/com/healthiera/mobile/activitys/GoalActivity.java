@@ -224,7 +224,7 @@ public class GoalActivity extends AppCompatActivity
             btn.setText(getString(R.string.edit));
 
             for (int i = 0; i < goals.size() && i < 7; i++) {
-                value[i] = goals.get(i).getValue().toString();
+                value[i] = goals.get(i).getValue();
             }
 
         }
@@ -363,15 +363,6 @@ public class GoalActivity extends AppCompatActivity
 //                    }, 260L);
 //
 
-        } else if (id == R.id.educational_tips) {
-            drawer.closeDrawer(GravityCompat.START);
-            handler.postDelayed(
-                    new Runnable() {
-                        public void run() {
-                            Intent i = new Intent(getApplication(), EducationalTipsActivity.class);
-                            startActivity(i);
-                        }
-                    }, 260L);
         }
         return true;
     }
@@ -609,7 +600,7 @@ public class GoalActivity extends AppCompatActivity
             TextView etalonHeader = (TextView) convertView.findViewById(R.id.goal_item_etalon_header);
             String s = holder.inputValue.getText().toString().trim();
 
-            if (s == null || s.isEmpty() || s.toString().compareTo("null") == 0) {
+            if (s.isEmpty() || s.compareTo("null") == 0) {
                 etalonHeader.setVisibility(View.INVISIBLE);
                 hiddenText.setText("Not Set");
                 holder.inputValue.setText("");
@@ -635,23 +626,21 @@ public class GoalActivity extends AppCompatActivity
 //                holder.inputValue.setBackground(null);
             }
 
-            holder.inputValue.addTextChangedListener(new
+            holder.inputValue.addTextChangedListener(
+                    new TextWatcher() {
+                        @Override
+                        public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
+                            value[position] = arg0.toString();
+                        }
 
-                                                             TextWatcher() {
+                        @Override
+                        public void beforeTextChanged(CharSequence arg0, int arg1, int arg, int arg3) {
+                        }
 
-                                                                 @Override
-                                                                 public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {
-                                                                     value[position] = arg0.toString();
-                                                                 }
-
-                                                                 @Override
-                                                                 public void beforeTextChanged(CharSequence arg0, int arg1, int arg, int arg3) {
-                                                                 }
-
-                                                                 @Override
-                                                                 public void afterTextChanged(Editable arg0) {
-                                                                 }
-                                                             }
+                        @Override
+                        public void afterTextChanged(Editable arg0) {
+                        }
+                    }
 
             );
 

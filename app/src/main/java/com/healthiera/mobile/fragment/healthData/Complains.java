@@ -18,7 +18,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.healthiera.mobile.R;
 import com.healthiera.mobile.entity.HealthDate;

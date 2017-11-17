@@ -79,7 +79,7 @@ public class GoalService {
         assertThat(goals).isNotNull();
         final List<String> goalsName =new ArrayList<>();
         for(int i = 0; i < goals.size(); i++){
-            goalsName.add(goals.get(i).getName().toString()+" - "+ goals.get(i).getValue().toString());
+            goalsName.add(goals.get(i).getName() +" - "+ goals.get(i).getValue());
         }
 
         return goalsName;

@@ -21,8 +21,8 @@ import org.joda.time.DateTime;
 
 public class CarePlanRVadapter extends RecyclerView.Adapter<CarePlanRVadapter.CatalogViewHolder> {
 
-    EventItemModel[] items = new EventItemModel[EventType.values().length];
-    com.healthiera.mobile.serivce.ScheduleTimeService scheduleTimeService = new com.healthiera.mobile.serivce.ScheduleTimeService();
+    private EventItemModel[] items = new EventItemModel[EventType.values().length];
+    private com.healthiera.mobile.serivce.ScheduleTimeService scheduleTimeService = new com.healthiera.mobile.serivce.ScheduleTimeService();
     private Context context;
 
     public CarePlanRVadapter(Context context, EventItemModel[] item) {
@@ -44,7 +44,7 @@ public class CarePlanRVadapter extends RecyclerView.Adapter<CarePlanRVadapter.Ca
     public void onBindViewHolder(final CarePlanRVadapter.CatalogViewHolder catalogViewHolder, final int i) {
 
 
-        catalogViewHolder.title.setText("" + items[i].getEventName());
+        catalogViewHolder.title.setText(items[i].getEventName());
 
         catalogViewHolder.icon.setImageResource(items[i].getImage());
         //catalogViewHolder.icon

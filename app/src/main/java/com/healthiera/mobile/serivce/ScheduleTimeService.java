@@ -91,8 +91,8 @@ public class ScheduleTimeService {
 
                         } else if (schedule.getRepeatType().equals(RepeatType.SPECIFIC_DAYS)) {
                             String[] weekDays = schedule.getDaysOfWeek().split(",");
-                            for (int i = 0; i < weekDays.length; i++) {
-                                if (currentDate.getDayOfWeek() == getWeekDaysNumber(weekDays[i])) {
+                            for (String weekDay : weekDays) {
+                                if (currentDate.getDayOfWeek() == getWeekDaysNumber(weekDay)) {
                                     todayScheduleTimes.addAll(getByScheduleId(schedule.getId()));
                                 }
                                 ;
@@ -114,8 +114,8 @@ public class ScheduleTimeService {
 
                     } else if (schedule.getRepeatType().equals(RepeatType.SPECIFIC_DAYS)) {
                         String[] weekDays = schedule.getDaysOfWeek().split(",");
-                        for (int i = 0; i < weekDays.length; i++) {
-                            if (currentDate.getDayOfWeek() == getWeekDaysNumber(weekDays[i])) {
+                        for (String weekDay : weekDays) {
+                            if (currentDate.getDayOfWeek() == getWeekDaysNumber(weekDay)) {
                                 todayScheduleTimes.addAll(getByScheduleId(schedule.getId()));
                             }
                             ;

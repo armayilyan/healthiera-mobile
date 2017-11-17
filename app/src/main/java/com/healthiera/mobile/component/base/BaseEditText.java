@@ -23,7 +23,7 @@ import java.util.ArrayList;
  * @author Davit Ter-Arakelyan
  * @date 12.08.2016
  */
-public class BaseEditText extends EditText {
+public class BaseEditText extends android.support.v7.widget.AppCompatEditText {
 
     public BaseEditText(Context context) {
         super(context);
